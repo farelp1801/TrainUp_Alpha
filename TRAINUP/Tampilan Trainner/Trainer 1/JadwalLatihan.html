@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Latihan Gym</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            background-color: #ffffff;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        /* Centered navbar links */
+        .navbar-links {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        /* Navbar item styling */
+        .navbar a {
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #333333;
+            text-decoration: none;
+            margin: 0 10px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        /* Hover effect for navbar items */
+        .navbar a:hover {
+            background-color: #555555;
+            color: #ffffff;
+            border-color: #555555;
+        }
+
+        /* Sign In button styling */
+        .sign-in {
+            padding: 8px 20px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .sign-in:hover {
+            background-color: #45a049;
+        }
+
+        /* Main container styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding-top: 80px;
+            flex-direction: column;
+        }
+
+        /* Center the schedule display */
+        .schedule-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Schedule display styling */
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            width: 100%;
+            max-width: 1000px;
+            margin-top: 20px;
+        }
+
+        .day-box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+            max-width: 150px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .day-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .day-box h2 {
+            font-size: 1.2em;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .day-box .info {
+            font-size: 0.95em;
+            color: #333;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .edit-btn {
+            display: inline-block;
+            padding: 8px 12px;
+            font-size: 0.9em;
+            color: #ffffff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .edit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-links">
+            <a href="united.html">Home</a>
+            <a href="TrainerGym.html">Trainer Gym</a>
+            <a href="JadwalLatihan.html">Jadwal Latihan</a>
+            <a href="ProgramLatihan.html">Program Latihan</a>
+            <a href="Konsultasi.html">Konsultasi</a>
+            <a href="Pembayaran.html"></a>
+        </div>
+        <a href="SignIn.html" class="sign-in">Sign In</a>
+    </div>
+
+    <!-- Centered Schedule Display -->
+    <div class="schedule-container">
+        <div class="row">
+            <a href="JadwalLatihan2.html" class="day-box">
+                <h2>Senin</h2>
+                <div class="info">Latihan: Yoga<br>Durasi: 1 jam<br>Tanggal: 2024-11-04</div>
+                <div class="edit-btn">Edit</div>
+            </a>
+            <a href="JadwalLatihan2.html" class="day-box">
+                <h2>Selasa</h2>
+                <div class="info">Latihan: Kardio<br>Durasi: 1.5 jam<br>Tanggal: 2024-11-05</div>
+                <div class="edit-btn">Edit</div>
+            </a>
+            <a href="JadwalLatihan2.html" class="day-box">
+                <h2>Rabu</h2>
+                <div class="info">Latihan: Angkat Beban<br>Durasi: 2 jam<br>Tanggal: 2024-11-06</div>
+                <div class="edit-btn">Edit</div>
+            </a>
+            <a href="JadwalLatihan2.html" class="day-box">
+                <h2>Kamis</h2>
+                <div class="info">Latihan: HIIT<br>Durasi: 1 jam<br>Tanggal: 2024-11-07</div>
+                <div class="edit-btn">Edit</div>
+            </a>
+        </div>
+
+        <div class="row">
+            <a href="JadwalLatihan2.html" class="day-box">
+                <h2>Jumat</h2>
+                <div class="info">Latihan: Stretching<br>Durasi: 45 menit<br>Tanggal: 2024-11-08</div>
+                <div class="edit-btn">Edit</div>
+            </a>
+            <a href="JadwalLatihan2.html" class="day-box">
+                <h2>Sabtu</h2>
+                <div class="info">Latihan: Aerobik<br>Durasi: 1 jam<br>Tanggal: 2024-11-09</div>
+                <div class="edit-btn">Edit</div>
+            </a>
+            <a href="JadwalLatihan2.html" class="day-box">
+                <h2>Minggu</h2>
+                <div class="info">Latihan: Pilates<br>Durasi: 1.5 jam<br>Tanggal: 2024-11-10</div>
+                <div class="edit-btn">Edit</div>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

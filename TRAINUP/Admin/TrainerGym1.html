@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train GYM</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar styling */
+        .navbar {           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0;
+            background-color: #ffffff;
+        }
+
+        /* Navbar item styling */
+        .navbar a {
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #333333;
+            text-decoration: none;
+            margin: 0 10px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        /* Hover effect for navbar items */
+        .navbar a:hover {
+            background-color: #555555;
+            color: #ffffff;
+            border-color: #555555;
+        }
+        
+        /* Log Out button styling */
+        .logout-btn {
+            position: absolute;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #ffffff; /* Membuat teks Log Out berwarna putih */
+            background-color: #218838;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .logout-btn:hover {
+            background-color: #1e7e34;
+        }
+
+        /* Main container styling */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 80px); /* Adjusting for navbar height */
+            background: linear-gradient(to right, #4a4a4a, #f4f4f4);
+            overflow: hidden; /* Ensures no overflow on the sides */
+            position: relative;
+        }
+
+        /* Full-width image styling */
+        .image-section img {
+            width: auto; /* Full viewport width */
+            height: 55vh;
+            object-fit: cover; /* Ensures the image covers the entire width */
+        }
+
+        /* Container styling for trainer selection */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        .trainer-container {
+            max-width: 1000px;
+            margin: 2em auto;
+            padding: 1em;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Trainer card and button styles */
+        .trainer-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1em;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .trainer-card:last-child {
+            border-bottom: none;
+        }
+
+        .trainer-details {
+            display: flex;
+            align-items: center;
+        }
+
+        .trainer-details img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 1em;
+        }
+
+        .trainer-info {
+            text-align: left;
+        }
+
+        .trainer-info h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .trainer-info p {
+            margin: 0.5em 0;
+            color: #555;
+        }
+
+        .hire-btn {
+            padding: 0.3em 0.8em;
+            font-size: 0.9em;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .hire-btn:hover {
+            background-color: #218838;
+        }
+
+        .hire-btn a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Add Trainer button styling */
+        .add-trainer-btn {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .add-trainer-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="united1.html">Home</a>
+    <a href="TrainerGym1.html">Trainer Gym</a>
+    <a href="JadwalLatihan1.html">Jadwal Latihan</a>
+    <a href="ProgramLatihan1.html">Program Latihan</a>
+    <a href="https://wa.me/082113717662">Konsultasi</a>
+    <a href="logout.html" class="logout-btn">Log Out</a>
+</div>
+
+<header>
+    <h1>Pilih Trainer Anda</h1>
+</header>
+
+<div class="trainer-container">
+    <!-- Card Trainer 1 -->
+    <div class="trainer-card">
+        <div class="trainer-details">
+            <img src="Pria.jpg" alt="Trainer 1">
+            <div class="trainer-info">
+                <h3>John Doe</h3>
+                <p>Jenis kelamin: Laki-laki</p>
+                <p>Spesialisasi: Fitness & Kebugaran</p>
+                <p>Pengalaman: 5 tahun</p>
+            </div>
+        </div>
+        <button class="hire-btn"><a href="Pembayaran.html">Pembayaran</a></button>
+    </div>
+
+    <!-- Card Trainer 2 -->
+    <div class="trainer-card">
+        <div class="trainer-details">
+            <img src="wanita.jpg" alt="Trainer 2">
+            <div class="trainer-info">
+                <h3>Santi</h3>
+                <p>Jenis kelamin: Perempuan</p>
+                <p>Spesialisasi: Fitness & Kebugaran</p>
+                <p>Pengalaman: 3 tahun</p>
+            </div>
+        </div>
+        <button class="hire-btn"><a href="Pembayaran.html">Pembayaran</a></button>
+    </div>
+
+    <!-- Card Trainer 3 -->
+    <div class="trainer-card">
+        <div class="trainer-details">
+            <img src="pria.jpg" alt="Trainer 3">
+            <div class="trainer-info">
+                <h3>Michael Johnson</h3>
+                <p>Jenis kelamin: Laki-laki</p>
+                <p>Spesialisasi: Fitness & Kebugaran</p>
+                <p>Pengalaman: 7 tahun</p>
+            </div>
+        </div>
+        <button class="hire-btn"><a href="Pembayaran.html">Pembayaran</a></button>
+    </div>
+
+    <!-- Add Trainer button -->
+    <a href="TambahTrainer.html" class="add-trainer-btn">Tambah Trainer</a>
+</div>
+
+</body>
+</html>

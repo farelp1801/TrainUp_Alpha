@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TrainUp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #ffffff;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        /* Navbar links centered */
+        .navbar-links {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        /* Navbar item styling */
+        .navbar a {
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #333333;
+            text-decoration: none;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: background-color 0.3s, border-color 0.3s;
+            margin: 0 5px;
+        }
+
+        /* Hover effect for navbar items */
+        .navbar a:hover {
+            background-color: #555555;
+            color: #ffffff;
+            border-color: #555555;
+        }
+
+        /* Log In button - Green color */
+        .sign-in {
+            padding: 8px 20px;
+            background-color: #28a745; /* Warna hijau */
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: auto;
+        }
+
+        .sign-in:hover {
+            background-color: #218838; /* Warna hijau yang lebih gelap saat hover */
+        }
+
+        /* Main container styling */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #4a4a4a, #f4f4f4);
+            position: relative;
+            margin-top: 60px;
+            padding: 20px;
+        }
+
+        /* Full-width image styling */
+        .image-section img {
+            width: auto;
+            height: 55vh;
+            object-fit: cover;
+        }
+
+        /* Text overlay styling */
+        .text-overlay {
+            position: absolute;
+            top: 10%;
+            text-align: center;
+            font-size: 3em;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .text-overlay .train {
+            color: #000000;
+        }
+
+        .text-overlay .up {
+            color: #90ee90;
+        }
+
+        /* Service description styling */
+        .service-info {
+            margin-top: 30px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .service-info h2 {
+            font-size: 2em;
+            color: #4a4a4a;
+            margin-bottom: 15px;
+        }
+
+        .service-info p {
+            font-size: 1.1em;
+            color: #333333;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <div class="navbar-links">
+            <a href="united.html">Home</a> 
+            <a href="ProgramLatihan.html">Program Latihan</a>
+            <a href="Aboutus.html">About Us</a>
+        </div>
+        <a href="SignIn.html    " class="sign-in">Log In</a>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <!-- Text Overlay Section -->
+        <div class="text-overlay">
+            <span class="train">Train</span><span class="up">Up</span>
+        </div>
+        
+        <!-- Service Information Section -->
+        <div class="service-info">
+            <h2>Tentang Layanan Kami</h2>
+            <p>TrainUp adalah platform yang menyediakan layanan trainer GYM profesional untuk membantu Anda mencapai
+               tujuan kebugaran dan kesehatan Anda. Dengan berbagai program latihan yang disesuaikan, tim trainer kami siap 
+               mendampingi Anda dalam setiap langkah perjalanan fitness Anda, mulai dari program pemula hingga latihan intensif.</p>
+            <p>Layanan kami meliputi:
+               <ul>
+                   <li>Pelatihan Pribadi: Sesi 1-on-1 dengan trainer yang berpengalaman.</li>
+                   <li>Program Latihan Kelompok: Latihan bersama dalam kelompok untuk motivasi lebih.</li>
+                   <li>Rencana Nutrisi: Panduan makan untuk mendukung tujuan fitness Anda.</li>
+                   <li>Pengawasan dan Evaluasi Progres: Pemantauan berkala untuk hasil maksimal.</li>
+               </ul>
+            </p>
+            <p>Kami percaya bahwa kebugaran adalah hak setiap orang, dan kami berkomitmen untuk menyediakan layanan terbaik
+               dengan pendekatan yang ramah dan profesional. Bergabunglah bersama kami di TrainUp, dan capai versi terbaik 
+               dari diri Anda!</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TrainUp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #ffffff;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        /* Navbar links centered */
+        .navbar-links {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        /* Navbar item styling */
+        .navbar a {
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #333333;
+            text-decoration: none;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: background-color 0.3s, border-color 0.3s;
+            margin: 0 5px;
+        }
+
+        /* Hover effect for navbar items */
+        .navbar a:hover {
+            background-color: #555555;
+            color: #ffffff;
+            border-color: #555555;
+        }
+
+        /* Log Out button styling */
+        .logout-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #218838;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            margin-left: auto;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .logout-button:hover {
+            background-color: #218838
+            ;
+        }
+
+        /* Main container styling */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full height */
+            background: linear-gradient(to right, #4a4a4a, #f4f4f4);
+            position: relative;
+            margin-top: 60px; /* Space for fixed navbar */
+        }
+
+        /* Full-width image styling */
+        .image-section img {
+            width: auto;
+            height: 55vh;
+            object-fit: cover;
+        }
+
+        /* Text overlay styling */
+        .text-overlay {
+            position: absolute;
+            top: 10%;
+            text-align: center;
+            font-size: 3em;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .text-overlay .train {
+            color: #000000;
+        }
+
+        .text-overlay .up {
+            color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <div class="navbar-links">
+            <a href="homeuser.html">Home</a>
+            <a href="JadwalLatihanUser.html">Jadwal Latihan</a>
+            <a href="ProgramLatihanUser.html">Program Latihan</a>
+            <a href="https://wa.me/082113717662">Konsultasi</a>
+
+            <button class="logout-button">Log Out</button>
+        </div>
+        </div>
+        
+        <!-- Log Out Button -->
+        <button class="logout-button">Log Out</button>
+    </div>
+    
+    <!-- Main Content Section -->
+    <div class="container">
+        <!-- Text Overlay Section -->
+        <div class="text-overlay">
+            <span class="train">Train</span><span class="up">Up</span>
+        </div>
+        
+        <!-- Image Section -->
+        <div class="image-section">
+            <img src="GYM3.png" alt="New Collection">
+        </div>
+    </div>
+
+</body>
+</html>

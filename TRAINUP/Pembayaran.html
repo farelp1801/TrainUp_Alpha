@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            background-color: #ffffff;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        /* Navbar links centered */
+        .navbar-links {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+        }
+
+        /* Navbar item styling */
+        .navbar a {
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #333333;
+            text-decoration: none;
+            margin: 0 10px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        /* Hover effect for navbar items */
+        .navbar a:hover {
+            background-color: #555555;
+            color: #ffffff;
+            border-color: #555555;
+        }
+
+        /* Sign In button */
+        .sign-in {
+            padding: 8px 20px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 20px; /* Space from the edge */
+        }
+
+        .sign-in:hover {
+            background-color: #45a049;
+        }
+
+        /* Main container styling */
+        .container {
+            max-width: 500px;
+            margin: 100px auto 2em; /* Adjusted for navbar height */
+            padding: 2em;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Payment section styling */
+        .header {
+            background-color: #4CAF50;
+            padding: 1em;
+            color: white;
+            border-radius: 8px 8px 0 0;
+        }
+        .qris-image img {
+            width: 200px;
+            height: 200px;
+        }
+        .instruction {
+            color: #555;
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        .amount {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .confirm-btn {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .confirm-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="navbar-links">
+        <a href="united.html">Home</a>
+        <a href="TrainerGym.html">Trainer Gym</a>
+        <a href="ProgramLatihan.html">Program Latihan</a>
+        <a href="Pembayaran.html">Pembayaran</a>
+    </div>
+    <a href="SignIn.html" class="sign-in">Sign In</a>
+</div>
+
+<!-- Main Container for QRIS Payment -->
+<div class="container">
+    <div class="header">
+        <h1>Pembayaran QRIS</h1>
+    </div>
+    
+    <div class="instruction">
+        <p>Silakan scan QR code di bawah ini untuk melakukan pembayaran:</p>
+    </div>
+    
+    <div class="qris-image">
+        <img src="Qriss.png" alt="QRIS QR Code">
+    </div>
+    
+    <div class="amount">
+        Jumlah Pembayaran: Rp100.000
+    </div>
+    
+    <button class="confirm-btn" onclick="alert('Pembayaran berhasil dikonfirmasi!')"><a href="JadwalLatihan.html">Konfirmasi Pembayaran</a></button>
+</div>
+
+</body>
+</html>
